@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+    <img [src]="hotellist.CardImgUrl" class="card-img-top" [alt]="hotellist.cardAlt">
+    <div class="card-body">
+      <span *ngIf="hotellist.newHotel" class="badge rounded-pill text-bg-info">
+        {{ hotellist.newHotel }}
+      </span>
+      <h5 class="card-title">{{ hotellist.cardTitle }}</h5>
+      <p class="card-text">{{ hotellist.cardText }}</p>
+      <a href="#" class="btn btn-primary">{{ buttonTitle }}</a>
+    </div>
+  </div>
+</div>
+
